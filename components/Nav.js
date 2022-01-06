@@ -72,25 +72,25 @@ export default function Nav() {
               <div className="pt-2 ">Eric Murrell</div>
               <div className="flex flex-row pb-12 ">
                 <a href="https://github.com/EMurrell">
-                  <Github className="my-6 mr-6 text-white transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-teal-300" />
+                  <Github className="my-6 mr-6 text-white transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-blue-200" />
                 </a>
                 <a href="mailto:emurrell.dev@gmail.com">
-                  <MailIcon className="w-8 h-8 my-6 mr-6 text-white transition duration-100 ease-in-out transform hover:scale-110 hover:text-teal-300" />
+                  <MailIcon className="w-8 h-8 my-6 mr-6 text-white transition duration-100 ease-in-out transform hover:scale-110 hover:text-blue-200" />
                 </a>
 
                 <a href="https://twitter.com/MurrellWeb">
-                  <Twitter className="my-6 mr-6 text-white transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-teal-300" />
+                  <Twitter className="my-6 mr-6 text-white transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-blue-200" />
                 </a>
 
                 <a href="https://dev.to/emurrell">
-                  <Devdotto className="w-8 h-8 my-6 text-white transition duration-100 ease-in-out transform hover:scale-110 hover:text-teal-300" />
+                  <Devdotto className="w-8 h-8 my-6 text-white transition duration-100 ease-in-out transform hover:scale-110 hover:text-blue-200" />
                 </a>
               </div>
               {links.map(({ name, to, id }) => (
                 <motion.a
                   key={id}
                   href={to}
-                  className="flex my-4 transition duration-100 ease-in-out transform text-neutral-100 hover:text-teal-300 hover:scale-105"
+                  className="flex my-4 transition duration-100 ease-in-out transform text-neutral-100 hover:text-blue-200 hover:scale-105"
                   variants={itemVariants}
                   aria-current={links.current ? "page" : undefined}
                   onClick={cycleOpen}
@@ -117,7 +117,7 @@ export default function Nav() {
           <a
             key={id}
             href={to}
-            className="px-8 py-6 text-lg text-white transition duration-100 ease-in-out transform 2xl:text-xl hover:text-teal-300 hover:scale-105"
+            className="px-8 py-6 text-lg text-white transition duration-100 ease-in-out transform 2xl:text-xl hover:text-blue-200 hover:scale-105"
           >
             {name}
           </a>

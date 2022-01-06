@@ -4,6 +4,7 @@ import Link from "next/link";
 import Nav from "./Nav.js";
 import Meta from "./Meta.js";
 import FadeUp from "../animations/FadeUp";
+import DelayedFadeIn from "../animations/DelayedFadeIn.js";
 import { Github, Devdotto, Twitter } from "@icons-pack/react-simple-icons";
 import { MailIcon } from "@heroicons/react/outline";
 
@@ -25,21 +26,24 @@ export default function Hero() {
         </div>
         <div className="relative justify-center px-6 mx-auto max-w-7xl md:px-16 ">
           <FadeUp>
-            <h3 className="pt-64 text-xl font-medium text-white md:text-2xl lg:text-3xl 2xl:text-4xl">
+            <h3 className="pt-64 text-xl font-medium text-neutral-200 md:text-2xl lg:text-3xl 2xl:text-4xl">
               Hello, my name is
             </h3>
             <h1 className="pt-2 text-5xl font-semibold text-white md:text-6xl lg:text-7xl 2xl:text-8xl">
               Eric Murrell.
             </h1>
-            <p className="mt-2 text-2xl font-medium text-neutral-100 md:text-3xl lg:text-4xl 2xl:text-5xl">
-              I develop websites.
+          </FadeUp>
+          <DelayedFadeIn>
+            <p className="mt-2 text-2xl font-medium text-neutral-200 md:text-3xl lg:text-4xl 2xl:text-5xl">
+              I develop fast websites.
             </p>
+
             <Link href="/menu">
               <button className="px-8 py-2 mt-6 text-xl font-normal border-2 text-neutral-100 hover:bg-neutral-100 hover:border-neutral-100 hover:text-black">
                 CONTACT ME
               </button>
             </Link>
-          </FadeUp>
+          </DelayedFadeIn>
         </div>
       </div>
     </main>

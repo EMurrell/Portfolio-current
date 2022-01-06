@@ -11,14 +11,13 @@ export default function About() {
       <div className="absolute z-10 w-2/3 pt-20 md:text-lg lg:pl-20 2xl:pl-32 ">
         <FadeLeft>
           <h3 className="mr-6 text-xl font-semibold lg:text-3xl font-display">
-            A PASSION FOR BURGERS
+            A DESCRIPTION OF ME
           </h3>
           <p className="pt-4 text-lg font-medium lg:text-xl">
-            We here at Example Burger take burgers seriously. Every patty is
-            expertly handmade in-house, using only the freshest local
-            ingredients. Our buns are artisanally baked each morning. Our
-            fixings are local and organic. Every burger is prepared fresh
-            to-order and made with love.
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
           </p>
         </FadeLeft>
       </div>

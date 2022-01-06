@@ -76,7 +76,7 @@ export default function Work() {
           {posts.map((post) => (
             <div
               key={post.title}
-              className="flex flex-col overflow-hidden shadow-lg shadow-neutral-500"
+              className="flex flex-col overflow-hidden shadow-lg shadow-neutral-400"
             >
               <div className="flex-shrink-0">
                 <img
