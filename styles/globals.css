@@ -4,7 +4,7 @@
 
 @layer components {
   .icon {
-    @apply w-12 h-12 mt-4 mx-9 md:w-16 md:h-16 lg:w-20 lg:h-20 text-neutral-600 md:mx-9 lg:mx-20;
+    @apply w-12 h-12 mt-4 mx-9 md:w-16 md:h-16 lg:w-20 lg:h-20 text-cyan-800 md:mx-9 lg:mx-20;
   }
   .description {
     @apply mt-2 mb-5 text-sm font-display md:text-base lg:text-lg text-neutral-700;

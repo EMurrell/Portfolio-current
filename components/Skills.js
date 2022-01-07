@@ -24,7 +24,7 @@ export default function Skills() {
   return (
     <section
       id="Skills"
-      className="flex flex-col justify-center w-full h-screen md:pt-8 lg:pt-16 text-neutral-900 font-display md:px-28 lg:px-36 xl:px-72 "
+      className="flex flex-col justify-center w-full h-screen md:pt-12 lg:pt-20 text-neutral-900 font-display md:px-28 lg:px-36 xl:px-72 "
     >
       <div className="flex flex-col text-center ">
         <FadeUp>
@@ -41,34 +41,34 @@ export default function Skills() {
             <div className="flex flex-col justify-center">
               <Html5 className="icon" />
               <p className="description">HTML</p>
-              <CssThree className="icon" />
-              <p className="description">CSS</p>
-              <Javascript className="icon" />
-              <p className="description">Javascript</p>
               <ReactJs className="icon" />
               <p className="description">React</p>
-            </div>
-            <div className="flex flex-col justify-center">
               <Nodedotjs className="icon" />
               <p className="description">Node.js</p>
-              <Nextdotjs className="icon" />
-              <p className="description">Next.js</p>
-              <Tailwindcss className="icon" />
-              <p className="description">TailwindCSS</p>
-              <Github className="icon" />
-              <p className="description">Github</p>
-            </div>
-            <div className="flex flex-col justify-center">
+
               <Netlify className="icon" />
               <p className="description">Netlify</p>
-              {/* <Vercel className="icon" />
-              <p className="description">Vercel</p> */}
-              <Framer className="icon" />
-              <p className="description">Framer API</p>
+            </div>
+            <div className="flex flex-col justify-center">
+              <CssThree className="icon" />
+              <p className="description">CSS</p>
+
+              <Nextdotjs className="icon" />
+              <p className="description">Next.js</p>
+              <Github className="icon" />
+              <p className="description">Github</p>
               <Affinityphoto className="icon" />
               <p className="description">Affinity Photo</p>
+            </div>
+            <div className="flex flex-col justify-center">
+              <Javascript className="icon" />
+              <p className="description">Javascript</p>
+              <Tailwindcss className="icon" />
+              <p className="description">TailwindCSS</p>
               <Visualstudiocode className="icon" />
               <p className="description">VS Code</p>
+              <Framer className="icon" />
+              <p className="description">Framer API</p>
             </div>
           </div>
         </FadeIn>

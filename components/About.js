@@ -20,7 +20,7 @@ export default function About() {
           </p>
         </FadeLeft>
       </div>
-      <div className="absolute pb-24 font-semibold text-right text-cyan-800 md:pb-0 drop-shadow opacity-20 text-7xl md:text-9xl right-8 md:right-20 lg:right-36 2xl:right-44 ">
+      <div className="absolute pb-24 font-semibold text-right text-cyan-800 md:pb-0 drop-shadow opacity-30 text-7xl md:text-9xl right-8 md:right-20 lg:right-36 2xl:right-44 ">
         ABOUT <br /> ME
       </div>
     </section>
