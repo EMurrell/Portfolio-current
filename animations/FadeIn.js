@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 
-function DelayedFadeIn({ children, isVisible }) {
+function FadeIn({ children, isVisible }) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -17,7 +17,12 @@ function DelayedFadeIn({ children, isVisible }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ delay: 2.6, type: "spring", stiffness: 40 }}
+      transition={{
+        delay: 1.3,
+        type: "spring",
+        stiffness: 40,
+        staggerChildren: 0.5,
+      }}
       variants={{
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 1 },
@@ -28,4 +33,4 @@ function DelayedFadeIn({ children, isVisible }) {
   );
 }
 
-export default DelayedFadeIn;
+export default FadeIn;

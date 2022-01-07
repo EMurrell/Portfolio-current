@@ -7,7 +7,7 @@ import {
   Twitter,
   ReactJs,
 } from "@icons-pack/react-simple-icons";
-import { MailIcon } from "@heroicons/react/outline";
+import { MailIcon, ChevronDownIcon } from "@heroicons/react/outline";
 import { Sling as Hamburger } from "hamburger-react";
 
 const links = [
@@ -43,16 +43,16 @@ export default function Nav() {
   const [open, cycleOpen] = useCycle(false, true);
 
   return (
-    <nav className="fixed z-50 flex justify-between w-full text-white bg-neutral-900 font-display">
-      <div className="inline-flex px-6 py-6 text-2xl font-medium lg:text-3xl 2xl:text-3xl md:pl-16 lg:pl-20 ">
-        EM
+    <nav className="flex justify-between w-full text-neutral-900 font-display">
+      <div className="inline-flex px-4 py-6 text-2xl font-medium lg:text-2xl md:pl-8 lg:pl-16 ">
+        Eric Murrell
       </div>
 
       {/* The Side Bar Menu for screens smaller than 'Medium' */}
       <AnimatePresence>
         {open && (
           <motion.aside
-            className="fixed right-0 z-50 h-screen mt-20 bg-neutral-900 md:hidden "
+            className="fixed right-0 h-screen bg-yellow-400 md:hidden"
             initial={{ width: 0 }}
             animate={{
               width: "100%",
@@ -63,34 +63,34 @@ export default function Nav() {
             }}
           >
             <motion.div
-              className="flex flex-col p-10 ml-4 text-2xl "
+              className="flex flex-col p-8 ml-4 text-2xl "
               initial="closed"
               animate="open"
               exit="closed"
               variants={sideVariants}
             >
-              <div className="pt-2 ">Eric Murrell</div>
+              <div className="pt-20 ">Eric Murrell</div>
               <div className="flex flex-row pb-12 ">
                 <a href="https://github.com/EMurrell">
-                  <Github className="my-6 mr-6 text-white transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-blue-200" />
+                  <Github className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-blue-200" />
                 </a>
                 <a href="mailto:emurrell.dev@gmail.com">
-                  <MailIcon className="w-8 h-8 my-6 mr-6 text-white transition duration-100 ease-in-out transform hover:scale-110 hover:text-blue-200" />
+                  <MailIcon className="w-8 h-8 my-6 mr-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-blue-200" />
                 </a>
 
                 <a href="https://twitter.com/MurrellWeb">
-                  <Twitter className="my-6 mr-6 text-white transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-blue-200" />
+                  <Twitter className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-blue-200" />
                 </a>
 
                 <a href="https://dev.to/emurrell">
-                  <Devdotto className="w-8 h-8 my-6 text-white transition duration-100 ease-in-out transform hover:scale-110 hover:text-blue-200" />
+                  <Devdotto className="w-8 h-8 my-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-blue-200" />
                 </a>
               </div>
               {links.map(({ name, to, id }) => (
                 <motion.a
                   key={id}
                   href={to}
-                  className="flex my-4 transition duration-100 ease-in-out transform text-neutral-100 hover:text-blue-200 hover:scale-105"
+                  className="flex my-4 transition duration-100 ease-in-out transform text-neutral-900 hover:text-blue-200 hover:scale-105"
                   variants={itemVariants}
                   aria-current={links.current ? "page" : undefined}
                   onClick={cycleOpen}
@@ -111,13 +111,13 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* The Navbar on large screens */}
+      {/* The Navbar on medium screens */}
       <div className="hidden pr-8 md:inline-flex ">
         {links.map(({ name, to, id }) => (
           <a
             key={id}
             href={to}
-            className="px-8 py-6 text-lg text-white transition duration-100 ease-in-out transform 2xl:text-xl hover:text-blue-200 hover:scale-105"
+            className="px-6 py-6 text-lg font-medium transition duration-100 ease-in-out transform lg:px-8 text-neutral-900 2xl:text-xl hover:text-blue-200 hover:scale-105"
           >
             {name}
           </a>

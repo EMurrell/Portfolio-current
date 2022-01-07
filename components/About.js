@@ -6,22 +6,21 @@ export default function About() {
   return (
     <section
       id="About"
-      className="relative flex flex-col justify-center w-full px-8 py-10 mb-6 h-96 font-body"
+      className="relative flex flex-col justify-center w-full px-8 py-8 mb-6 h-96 font-display "
     >
-      <div className="absolute z-10 w-2/3 pt-20 md:text-lg lg:pl-20 2xl:pl-32 ">
+      <div className="absolute z-10 w-2/3 md:text-lg lg:pl-20 2xl:pl-32 ">
         <FadeLeft>
-          <h3 className="mr-6 text-xl font-semibold lg:text-3xl font-display">
-            A DESCRIPTION OF ME
-          </h3>
-          <p className="pt-4 text-lg font-medium lg:text-xl">
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-            Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+          <p className="py-4 text-lg font-normal md:text-xl lg:text-2xl">
+            I am a Full Stack Web Developer, with a focus on modern Jamstack
+            architecture. I have a passion for developing engaging digital
+            experiences through the use of animations, micro-interactions, and a
+            clean user interface.
+            <br />
+            <br />I live in Ottawa, Canada.
           </p>
         </FadeLeft>
       </div>
-      <div className="absolute font-extrabold text-right drop-shadow opacity-60 text-7xl md:text-9xl text-neutral-300 right-8 md:right-20 lg:right-32 2xl:right-40">
+      <div className="absolute pb-24 font-semibold text-right text-cyan-800 md:pb-0 drop-shadow opacity-20 text-7xl md:text-9xl right-8 md:right-20 lg:right-36 2xl:right-44 ">
         ABOUT <br /> ME
       </div>
     </section>
