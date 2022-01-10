@@ -14,7 +14,7 @@ export default function Bio() {
       </FadeUp>
       <FadeIn>
         <p className="pt-16 text-xl md:text-2xl">
-          I am a Full Stack Web Developer, with a focus on Jamstack technology.{" "}
+          I am a Full Stack Web Developer, with a focus on Jamstack technology.
           <br />
           <br />I have a passion for developing engaging digital experiences
           through the use of animations, micro-interactions, and a clean user

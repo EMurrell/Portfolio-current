@@ -18,10 +18,8 @@ export default function Header() {
 
       <main className="flex flex-col justify-center h-screen font-bold tracking-tight text-center pb-28 md:tracking-normal md:pb-16">
         <FadeUp>
-          {" "}
           <h1 className="flex flex-col pt-10 text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl">
-            {" "}
-            Hello, I'm Eric.
+            Hello, I&apos;m Eric.
           </h1>
         </FadeUp>
         <motion.h3

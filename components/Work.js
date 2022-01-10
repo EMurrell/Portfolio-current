@@ -15,10 +15,10 @@ export default function Work() {
       </FadeUp>
       <FadeIn>
         <div className="flex flex-col py-8 font-medium transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight">
-          <h3 className="text-2xl  md:text-3xl lg:text-4xl">
-            Mason's Touch Construction
+          <h3 className="text-2xl md:text-3xl lg:text-4xl">
+            Mason&apos;s Touch Construction
           </h3>
-          <p className="text-lg  md:text-xl lg:text-2xl">
+          <p className="text-lg md:text-xl lg:text-2xl">
             Website Redesign / Rebuild
           </p>
 
