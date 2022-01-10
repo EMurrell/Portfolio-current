@@ -24,21 +24,20 @@ export default function Skills() {
   return (
     <section
       id="Skills"
-      className="flex flex-col justify-center w-full h-screen md:pt-12 lg:pt-20 text-neutral-900 font-display md:px-28 lg:px-36 xl:px-72 "
+      className="min-h-screen px-8 py-20 md:px-16 lg:px-32 2xl:px-64 text-neutral-100 bg-neutral-800 font-display"
     >
-      <div className="flex flex-col text-center ">
+      <div className="flex flex-col w-full text-center">
         <FadeUp>
-          <h1 className="pb-6 text-3xl font-semibold md:text-4xl lg:text-6xl ">
-            Tech Stack
-          </h1>
-          <p className="px-16 pb-6 text-lg md:px-32 md:text-xl lg:text-2xl ">
-            Some of the tools and technologies I use every day.
-          </p>
+          <div className="flex justify-center w-full">
+            <h1 className="flex text-4xl font-semibold text-center w-max md:text-5xl lg:text-6xl shadow-bottom md:shadow-bottom2 lg:shadow-bottom3">
+              Skills
+            </h1>
+          </div>
         </FadeUp>
 
         <FadeIn>
-          <div className="flex flex-row justify-center">
-            <div className="flex flex-col justify-center">
+          <div className="flex flex-row justify-center pt-16">
+            <div className="flex flex-col ">
               <Html5 className="icon" />
               <p className="description">HTML</p>
               <ReactJs className="icon" />
@@ -49,10 +48,9 @@ export default function Skills() {
               <Netlify className="icon" />
               <p className="description">Netlify</p>
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col ">
               <CssThree className="icon" />
               <p className="description">CSS</p>
-
               <Nextdotjs className="icon" />
               <p className="description">Next.js</p>
               <Github className="icon" />
@@ -60,7 +58,7 @@ export default function Skills() {
               <Affinityphoto className="icon" />
               <p className="description">Affinity Photo</p>
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col ">
               <Javascript className="icon" />
               <p className="description">Javascript</p>
               <Tailwindcss className="icon" />

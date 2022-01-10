@@ -17,7 +17,7 @@ function DelayedFadeIn({ children, isVisible }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ delay: 2.6, type: "spring", stiffness: 40 }}
+      transition={{ delay: 2, type: "spring", stiffness: 40 }}
       variants={{
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 1 },

@@ -13,7 +13,6 @@ import { Sling as Hamburger } from "hamburger-react";
 const links = [
   { name: "About", to: "#About", id: 1 },
   { name: "Work", to: "#Work", id: 2 },
-  { name: "Skills", to: "#Skills", id: 3 },
   { name: "Contact", to: "#Contact", id: 4 },
 ];
 
@@ -33,7 +32,7 @@ const sideVariants = {
   },
   open: {
     transition: {
-      staggerChildren: 0.25,
+      staggerChildren: 0.3,
       staggerDirection: 1,
     },
   },
@@ -43,8 +42,8 @@ export default function Nav() {
   const [open, cycleOpen] = useCycle(false, true);
 
   return (
-    <nav className="flex justify-between w-full text-neutral-900 font-display">
-      <div className="inline-flex px-4 py-6 text-2xl font-medium lg:text-2xl md:pl-8 lg:pl-16 ">
+    <nav className="flex justify-between w-full bg-transparent text-neutral-100 font-display">
+      <div className="inline-flex mx-4 my-6 text-2xl font-medium shadow-bottom lg:text-3xl md:ml-8 lg:ml-16 lg:shadowbottom-3 ">
         Eric Murrell
       </div>
 
@@ -52,10 +51,10 @@ export default function Nav() {
       <AnimatePresence>
         {open && (
           <motion.aside
-            className="fixed right-0 h-screen bg-yellow-400 md:hidden"
+            className="fixed right-0 h-screen bg-neutral-700 md:hidden overflow"
             initial={{ width: 0 }}
             animate={{
-              width: "100%",
+              width: "95%",
             }}
             exit={{
               width: 0,
@@ -70,27 +69,27 @@ export default function Nav() {
               variants={sideVariants}
             >
               <div className="pt-20 ">Eric Murrell</div>
-              <div className="flex flex-row pb-12 ">
+              <div className="flex flex-row pb-8 border-b-2 border-neutral-500">
                 <a href="https://github.com/EMurrell">
-                  <Github className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-blue-200" />
+                  <Github className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-highlight" />
                 </a>
                 <a href="mailto:emurrell.dev@gmail.com">
-                  <MailIcon className="w-8 h-8 my-6 mr-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-blue-200" />
+                  <MailIcon className="w-8 h-8 my-6 mr-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-highlight" />
                 </a>
 
                 <a href="https://twitter.com/MurrellWeb">
-                  <Twitter className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-blue-200" />
+                  <Twitter className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-highlight" />
                 </a>
 
                 <a href="https://dev.to/emurrell">
-                  <Devdotto className="w-8 h-8 my-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-blue-200" />
+                  <Devdotto className="w-8 h-8 my-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-highlight" />
                 </a>
               </div>
               {links.map(({ name, to, id }) => (
                 <motion.a
                   key={id}
                   href={to}
-                  className="flex my-4 transition duration-100 ease-in-out transform text-neutral-900 hover:text-blue-200 hover:scale-105"
+                  className="flex mt-16 transition duration-100 ease-in-out transform text-neutral-100 hover:text-highlight hover:scale-105"
                   variants={itemVariants}
                   aria-current={links.current ? "page" : undefined}
                   onClick={cycleOpen}
@@ -106,7 +105,7 @@ export default function Nav() {
       {/* The Hamburger Menu and Close Icons */}
       <div className="flex justify-end md:hidden ">
         <button className="px-2 m-2 cursor-pointer">
-          <span className="sr-only">Open main menu</span>
+          <span className="sr-only ">Open main menu</span>
           <Hamburger toggled={open} toggle={cycleOpen} />
         </button>
       </div>
@@ -117,7 +116,7 @@ export default function Nav() {
           <a
             key={id}
             href={to}
-            className="px-6 py-6 text-lg font-medium transition duration-100 ease-in-out transform lg:px-8 text-neutral-900 2xl:text-xl hover:text-blue-200 hover:scale-105"
+            className="px-6 py-6 text-lg font-normal transition duration-100 ease-in-out transform lg:px-8 text-neutral-100 lg:text-xl hover:text-highlight hover:scale-105"
           >
             {name}
           </a>
