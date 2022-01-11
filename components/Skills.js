@@ -29,7 +29,7 @@ export default function Skills() {
       <div className="flex flex-col w-full text-center">
         <FadeUp>
           <div className="flex justify-center w-full">
-            <h1 className="flex text-4xl font-semibold text-center w-max md:text-5xl lg:text-6xl shadow-bottom md:shadow-bottom2 lg:shadow-bottom3">
+            <h1 className="flex text-4xl font-medium text-center w-max md:text-5xl lg:text-6xl shadow-bottom md:shadow-bottom2 lg:shadow-bottom3">
               Skills
             </h1>
           </div>

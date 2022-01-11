@@ -10,11 +10,11 @@ export default function Header() {
   return (
     <section
       id="Home"
-      className="flex flex-col w-full h-screen px-2 bg-neutral-800 text-neutral-100 bg-hero font-display md:px-10 lg:px-20 xl:px-28 "
+      className="flex flex-col w-full h-screen px-2 pt-20 bg-center bg-cover bg-neutral-800 text-neutral-100 bg-hero font-display md:px-10 lg:px-20 xl:px-28 "
     >
-      <DelayedFadeIn>
+      {/* <DelayedFadeIn>
         <Nav />
-      </DelayedFadeIn>
+      </DelayedFadeIn> */}
 
       <main className="flex flex-col justify-center h-screen font-bold tracking-tight text-center pb-28 md:tracking-normal md:pb-16">
         <FadeUp>

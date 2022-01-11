@@ -12,9 +12,9 @@ module.exports = {
         bottom2: "inset 0px -13px 0px   #ef4444",
         bottom3: "inset 0px -14px 0px   #ef4444",
       },
-      // backgroundImage: {
-      //   hero: "url('/wave-grey.jpg')",
-      // },
+      backgroundImage: {
+        hero: "url('/wave4.svg')",
+      },
       colors: {
         highlight: "#ef4444",
       },
