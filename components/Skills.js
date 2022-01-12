@@ -1,5 +1,6 @@
 import FadeIn from "../animations/FadeIn";
 import FadeUp from "../animations/FadeUp";
+import FadeLeft from "../animations/FadeLeft";
 import { AnimatePresence, animatePresence, motion } from "framer-motion";
 import {
   ReactJs,
@@ -27,16 +28,16 @@ export default function Skills() {
       className="min-h-screen px-8 py-20 md:px-16 lg:px-32 2xl:px-64 text-neutral-100 bg-neutral-800 font-display"
     >
       <div className="flex flex-col w-full text-center">
-        <FadeUp>
-          <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full">
+          <FadeLeft>
             <h1 className="flex text-4xl font-medium text-center w-max md:text-5xl lg:text-6xl shadow-bottom md:shadow-bottom2 lg:shadow-bottom3">
               Skills
             </h1>
-          </div>
-        </FadeUp>
+          </FadeLeft>
+        </div>
 
         <FadeIn>
-          <div className="flex flex-row justify-center pt-16">
+          <div className="flex flex-row justify-center pt-16 font-body">
             <div className="flex flex-col ">
               <Html5 className="icon" />
               <p className="description">HTML</p>
@@ -66,7 +67,7 @@ export default function Skills() {
               <Visualstudiocode className="icon" />
               <p className="description">VS Code</p>
               <Framer className="icon" />
-              <p className="description">Framer API</p>
+              <p className="description">Motion API</p>
             </div>
           </div>
         </FadeIn>

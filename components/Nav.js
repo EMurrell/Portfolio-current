@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 const links = [
   { name: "About", to: "#About", id: 1 },
   { name: "Work", to: "#Work", id: 2 },
-  { name: "Contact", to: "#Contact", id: 4 },
+  { name: "Contact", to: "#Contact", id: 3 },
 ];
 
 const itemVariants = {
@@ -52,26 +52,29 @@ export default function Nav() {
 
   return (
     <nav
-      className={`text-neutral-100 w-full flex backdrop-filter justify-between   fixed z-10 trasition ease-in-out duration-500 ${
+      className={`text-neutral-100 w-full flex backdrop-blur-sm justify-between  font-display  fixed z-10 trasition ease-in-out duration-500 ${
         animateNav && "shadow-xl "
       }`}
     >
       <div
         className={`flex w-screen py-6 bg-transparent   ${
           animateNav &&
-          "py-0  backdrop-blur-lg bg-neutral-800/30 trasition ease-in-out duration-500"
+          "py-0  backdrop-blur-lg bg-neutral-800/40 trasition ease-in-out duration-500"
         } mx-auto   justify-between `}
       >
-        <div className="inline-flex mx-4 my-5 text-2xl font-medium shadow-bottom lg:text-3xl md:ml-8 lg:ml-16 lg:shadowbottom-3 ">
-          Eric Murrell
-        </div>
+        <Link href="/">
+          <a className="inline-flex mx-4 my-5 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer font-logo md:text-3xl md:ml-8 lg:ml-16 hover:shadow-bottom ">
+            Eric Murrell
+          </a>
+        </Link>
 
         {/* The Side Bar Menu for screens smaller than 'Medium' */}
         <AnimatePresence>
           {open && (
             <motion.aside
-              className="fixed right-0 h-screen bg-neutral-700 md:hidden overflow"
+              className="fixed top-0 right-0 h-screen bg-neutral-700 md:hidden overflow"
               initial={{ width: 0 }}
+              transition={{ type: "tween" }}
               animate={{
                 width: "95%",
               }}
@@ -87,16 +90,18 @@ export default function Nav() {
                 exit="closed"
                 variants={sideVariants}
               >
-                <div className="pt-20 ">Eric Murrell</div>
+                <div className="pt-20 tracking-widest font-logo">
+                  Eric Murrell
+                </div>
                 <div className="flex flex-row pb-8 border-b-2 border-neutral-500">
-                  <a href="https://github.com/EMurrell">
+                  <a href="https://github.com/emurrell">
                     <Github className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-highlight" />
                   </a>
                   <a href="mailto:emurrell.dev@gmail.com">
                     <MailIcon className="w-8 h-8 my-6 mr-6 transition duration-100 ease-in-out transform hover:scale-110 hover:text-highlight" />
                   </a>
 
-                  <a href="https://twitter.com/MurrellWeb">
+                  <a href="https://twitter.com/emurrelldev">
                     <Twitter className="my-6 mr-6 transition duration-100 ease-in-out transform w-7 h-7 hover:scale-110 hover:text-highlight" />
                   </a>
 
@@ -108,7 +113,7 @@ export default function Nav() {
                   <motion.a
                     key={id}
                     href={to}
-                    className="flex mt-16 transition duration-100 ease-in-out transform text-neutral-100 hover:text-highlight hover:scale-105"
+                    className="flex mt-16 transition duration-100 ease-in-out transform text-neutral-100 hover:shadow-bottom w-max "
                     variants={itemVariants}
                     aria-current={links.current ? "page" : undefined}
                     onClick={cycleOpen}
@@ -135,7 +140,7 @@ export default function Nav() {
             <a
               key={id}
               href={to}
-              className="px-6 py-6 text-lg font-normal transition duration-100 ease-in-out transform lg:px-8 text-neutral-100 lg:text-xl hover:text-highlight hover:scale-105"
+              className="mx-8 my-6 text-lg font-normal transition duration-100 ease-in-out transform lg:mx-12 text-neutral-100 md:text-xl hover:shadow-bottom "
             >
               {name}
             </a>

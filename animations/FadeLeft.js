@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 
-function FadeUp({ children, isVisible }) {
+function FadeLeft({ children, isVisible }) {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.4 });
+  const [ref, inView] = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     if (inView) {
@@ -17,10 +17,15 @@ function FadeUp({ children, isVisible }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ delay: 0.2, type: "spring", stiffness: 40 }}
+      transition={{
+        delay: 0.4,
+        type: "tween",
+        duration: 0.4,
+        staggerChildren: 0.5,
+      }}
       variants={{
         visible: { opacity: 1, scale: 1, x: 0 },
-        hidden: { opacity: 0, scale: 1, x: 25 },
+        hidden: { opacity: 0, scale: 1, x: 30 },
       }}
     >
       {children}
@@ -28,4 +33,4 @@ function FadeUp({ children, isVisible }) {
   );
 }
 
-export default FadeUp;
+export default FadeLeft;

@@ -12,11 +12,7 @@ export default function Header() {
       id="Home"
       className="flex flex-col w-full h-screen px-2 pt-20 bg-center bg-cover bg-neutral-800 text-neutral-100 bg-hero font-display md:px-10 lg:px-20 xl:px-28 "
     >
-      {/* <DelayedFadeIn>
-        <Nav />
-      </DelayedFadeIn> */}
-
-      <main className="flex flex-col justify-center h-screen font-bold tracking-tight text-center pb-28 md:tracking-normal md:pb-16">
+      <main className="flex flex-col justify-center h-screen font-semibold tracking-tight text-center pb-28 md:tracking-normal md:pb-16">
         <FadeUp>
           <h1 className="flex flex-col pt-10 text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl">
             Hello, I&apos;m Eric.
@@ -38,6 +34,7 @@ export default function Header() {
               transition: {
                 delay: 1,
                 duration: 0.5,
+                type: "tween",
               },
             },
           }}
