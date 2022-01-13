@@ -12,15 +12,15 @@ export default function Mtc() {
         className="w-full min-h-screen px-5 pt-4 pb-24 tracking-wide font-display text-neutral-100 md:pt-8 md:px-12 lg:px-24 2xl:px-32 bg-neutral-800"
       >
         <div className="inline-flex justify-between w-full pt-2 mt-2 text-xs border-t-2 border-neutral-100 md:text-base ">
-          <p>Mason's Touch</p>
+          <p>Mason&apos;s Touch</p>
           <p>Case Study</p>
         </div>
         <FadeIn>
           <div className="flex flex-col">
             <div className="flex pt-12 lg:pt-24">
               <h3 className="pr-16 text-xl font-semibold md:text-2xl lg:text-3xl md:pr-96">
-                Mason's Touch is a masonry and foundation repair business in
-                Ottawa, ON.
+                Mason&apos;s Touch is a masonry and foundation repair business
+                in Ottawa, ON.
               </h3>
             </div>
             <div className="inline-flex justify-center py-4 md:justify-end ">
