@@ -17,36 +17,42 @@ export default function Work() {
       </FadeRight>
       <div className="pt-4">
         <FadeIn>
-          <div className="flex flex-col px-2 py-8 transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight ">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl ">
-              Mason&apos;s Touch Construction
-            </h3>
-            <p className="text-lg font-light text-black md:text-xl lg:text-2xl font-body">
-              Website Redesign / Rebuild
-            </p>
+          <Link href={"/mtc"} passHref>
+            <div className="flex flex-col px-2 py-8 transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight ">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl ">
+                Mason&apos;s Touch Construction
+              </h3>
+              <p className="text-lg text-black md:text-xl lg:text-2xl font-body">
+                Website Redesign/Rebuild
+              </p>
 
-            <ArrowNarrowRightIcon className="w-6 h-6 text-neutral-700 lg:w-10 lg:h-10 md:w-8 md:h-8" />
-          </div>
+              <ArrowNarrowRightIcon className="w-6 h-6 text-neutral-700 lg:w-10 lg:h-10 md:w-8 md:h-8" />
+            </div>
+          </Link>
         </FadeIn>
         <FadeIn>
-          <div className="flex flex-col py-8 transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl">Pup To Pal</h3>
-            <p className="text-lg font-light text-black md:text-xl lg:text-2xl font-body">
-              Website / Content Creation
-            </p>
+          <Link href={"/ptp"} passHref>
+            <div className="flex flex-col py-8 transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl">Pup To Pal</h3>
+              <p className="text-lg text-black md:text-xl lg:text-2xl font-body">
+                Website/Content Creation
+              </p>
 
-            <ArrowNarrowRightIcon className="w-6 h-6 text-neutral-700 lg:w-10 lg:h-10 md:w-8 md:h-8" />
-          </div>
+              <ArrowNarrowRightIcon className="w-6 h-6 text-neutral-700 lg:w-10 lg:h-10 md:w-8 md:h-8" />
+            </div>
+          </Link>
         </FadeIn>
         <FadeIn>
-          <div className="flex flex-col py-8 transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl">Portfolio</h3>
-            <p className="text-lg font-light text-black md:text-xl lg:text-2xl font-body">
-              Website / Content Creation
-            </p>
+          <Link href={"/port"} passHref>
+            <div className="flex flex-col py-8 transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl">Portfolio</h3>
+              <p className="text-lg text-black md:text-xl lg:text-2xl font-body">
+                Website/Content Creation
+              </p>
 
-            <ArrowNarrowRightIcon className="w-6 h-6 text-neutral-700 lg:w-10 lg:h-10 md:w-8 md:h-8" />
-          </div>
+              <ArrowNarrowRightIcon className="w-6 h-6 text-neutral-700 lg:w-10 lg:h-10 md:w-8 md:h-8" />
+            </div>
+          </Link>
         </FadeIn>
       </div>
     </section>

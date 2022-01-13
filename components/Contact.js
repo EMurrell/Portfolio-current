@@ -3,6 +3,7 @@ import { Github, Devdotto, Twitter } from "@icons-pack/react-simple-icons";
 import { MailIcon, ArrowNarrowRightIcon } from "@heroicons/react/outline";
 import FadeIn from "../animations/FadeIn";
 import FadeUp from "../animations/FadeUp";
+import { Framer, Nextdotjs, Tailwindcss } from "@icons-pack/react-simple-icons";
 
 export default function Contact() {
   const getCurrentYear = () => {
@@ -11,9 +12,9 @@ export default function Contact() {
   return (
     <footer
       id="Contact"
-      className="px-12 py-12 md:px-24 lg:px-52 text-neutral-100 bg-neutral-800 font-display"
+      className="flex flex-col justify-around px-12 pt-10 xl:h-auto md:px-24 lg:px-52 text-neutral-100 bg-neutral-800 font-display"
     >
-      <div className="flex flex-col pt-10 2xl:pt-16 lg:flex-row ">
+      <div className="flex flex-col py-20 2xl:py-20 lg:flex-row ">
         <FadeUp>
           <h1 className="pr-6 mb-12 text-4xl font-medium md:text-5xl lg:text-6xl lg:w-1/2">
             Let&apos;s Work <br />
@@ -58,17 +59,20 @@ export default function Contact() {
           </div>
         </FadeIn>
       </div>
-      <div className="pt-8 mt-12 border-t border-neutral-500">
-        <p className="text-sm text-center md:text-base lg:text-lg text-neutral-500">
-          Built with Next.js and TailwindCSS
-          <br />
-          SVG Background by{" "}
+      <div className="flex flex-col justify-center py-12 text-base text-center border-t border-neutral-500 lg:text-lg text-neutral-500">
+        <div className="flex flex-row justify-center">
+          Built with&nbsp;
+          <Nextdotjs className="w-6 h-6 mx-2" />
+          <Tailwindcss className="w-6 h-6 mx-2" />
+          <Framer className="w-6 h-6 mx-2" />
+        </div>
+        <div className="flex flex-row justify-center ">
+          SVG Background by&nbsp;
           <a href="https://bgjar.com">
-            <u>BGJar</u>
+            <u>BGJar.com</u>
           </a>
-          <br />
-          &copy; {getCurrentYear()} Eric Murrell.
-        </p>
+        </div>
+        &copy; {getCurrentYear()} Eric Murrell.
       </div>
     </footer>
   );

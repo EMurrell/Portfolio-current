@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('/wave4.svg')",
+        devices: "url('/devices-12-mid.png')",
       },
       colors: {
         highlight: "#ef4444",
@@ -22,9 +23,9 @@ module.exports = {
       fontFamily: {
         logo: ["Play"],
         display: ["Poppins"],
-        body: ["Roboto Slab"],
+        body: ["Lora"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

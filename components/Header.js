@@ -5,6 +5,8 @@ import FadeUp from "../animations/FadeUp";
 import { Github, Devdotto, Twitter } from "@icons-pack/react-simple-icons";
 import { MailIcon, ChevronDownIcon } from "@heroicons/react/outline";
 import DelayedFadeIn from "../animations/DelayedFadeIn";
+import Link from "next/link";
+import Head from "next/head";
 
 export default function Header() {
   return (
@@ -42,9 +44,11 @@ export default function Header() {
           I build fast websites.
         </motion.h3>
         <DelayedFadeIn>
-          <button className="w-40 p-2 mt-6 text-lg font-normal text-white border-2 shadow-lg cursor-pointer lg:p-3 hover:bg-neutral-800 hover:text-highlight lg:mt-8 lg:w-64 lg:text-2xl border-highlight shadow-neutral-900 bg-highlight">
-            Contact Me
-          </button>
+          <Link href={"/#Contact"} passHref>
+            <button className="w-40 p-2 mt-5 text-lg font-normal text-white border-2 shadow-lg cursor-pointer lg:p-3 hover:bg-neutral-800 hover:text-highlight lg:mt-8 lg:w-64 lg:text-2xl border-highlight shadow-neutral-900 bg-highlight">
+              Contact Me
+            </button>
+          </Link>
         </DelayedFadeIn>
       </main>
     </section>
