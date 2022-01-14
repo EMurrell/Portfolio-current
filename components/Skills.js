@@ -25,10 +25,10 @@ export default function Skills() {
   return (
     <section
       id="Skills"
-      className="min-h-screen px-8 py-20 md:px-16 lg:px-32 2xl:px-64 text-neutral-100 bg-neutral-800 font-display"
+      className="min-h-screen px-12 py-20 md:px-16 lg:px-32 2xl:px-64 text-neutral-100 bg-neutral-800 font-display"
     >
       <div className="flex flex-col w-full text-center">
-        <div className="flex justify-center w-full">
+        <div className="flex w-full lg:justify-center">
           <FadeLeft>
             <h1 className="flex text-4xl font-medium text-center w-max md:text-5xl lg:text-6xl shadow-bottom md:shadow-bottom2 lg:shadow-bottom3">
               Skills

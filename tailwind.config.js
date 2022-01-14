@@ -23,7 +23,7 @@ module.exports = {
       fontFamily: {
         logo: ["Play"],
         display: ["Poppins"],
-        body: ["Lora"],
+        body: ["Poppins"],
       },
     },
   },
