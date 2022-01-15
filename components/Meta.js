@@ -7,7 +7,7 @@ export default function Meta() {
       <title>Eric Murrell</title>
       <meta name="description" content="Web Developer Portfolio" />
       <link rel="icon" href="/favicon.ico" />
-      <meta property="og:image" content="/preview.jpg" />
+      <meta property="og:image" content="/fb-preview.jpg" />
       <meta property="og:title" content="Eric Murrell" />
       <meta property="og:description" content="Web Developer" />
       <meta name="twitter:card" content="summary_large_image" />

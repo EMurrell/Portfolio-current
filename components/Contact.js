@@ -60,19 +60,19 @@ export default function Contact() {
         </FadeIn>
       </div>
       <div className="flex flex-col justify-center py-12 text-base text-center border-t border-neutral-500 lg:text-lg text-neutral-500">
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center pb-1">
           Built with&nbsp;
           <Nextdotjs className="w-6 h-6 mx-2" />
           <Tailwindcss className="w-6 h-6 mx-2" />
           <Framer className="w-6 h-6 mx-2" />
         </div>
-        <div className="flex flex-row justify-center ">
+        <div className="flex flex-row justify-center pb-1">
           SVG Background by&nbsp;
           <a href="https://bgjar.com">
             <u>BGJar.com</u>
           </a>
         </div>
-        &copy; {getCurrentYear()} Eric Murrell.
+        &copy; {getCurrentYear()}
       </div>
     </footer>
   );

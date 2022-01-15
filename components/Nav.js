@@ -57,9 +57,9 @@ export default function Nav() {
       }`}
     >
       <div
-        className={`flex w-screen py-6 bg-transparent   ${
+        className={`flex w-screen py-4 bg-transparent   ${
           animateNav &&
-          "py-0  backdrop-blur-lg bg-neutral-800/40 trasition ease-in-out duration-500"
+          "py-0  backdrop-blur-lg bg-neutral-800/30 trasition ease-in-out duration-500"
         } mx-auto   justify-between `}
       >
         <Link href="/">

@@ -40,7 +40,7 @@ export default function Bio() {
               </span>
               <Image
                 src="/resp-dev.png"
-                alt=""
+                alt="picture of multiple devices"
                 width={200}
                 height={120}
                 className=" opacity-80"
@@ -60,14 +60,14 @@ export default function Bio() {
               </span>
               <Image
                 src="/speedometer.png"
-                alt=""
+                alt="picture of speedometer"
                 width={200}
                 height={120}
                 className=" opacity-80"
                 layout="fixed"
               />
               <p className="w-full pt-4 pb-8 text-base md:text-lg lg:text-xl">
-                Ultra-fast load times are an essential aspect of my projects.
+                Ultra-fast load times are an essential aspect of every project.
               </p>
             </div>
           </FadeIn>
@@ -78,13 +78,13 @@ export default function Bio() {
               </span>
               <Image
                 src="/lightbulb.png"
-                alt=""
+                alt="picture of lightbuld"
                 width={180}
                 height={120}
                 layout="fixed"
               />
               <p className="w-full pt-4 pb-8 text-base md:text-lg lg:text-xl">
-                I strive to provide a clean, modern UI and exceptional UX.
+                I deliver a clean, modern UI and smooth, seamless UX.
               </p>
             </div>
           </FadeIn>
