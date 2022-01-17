@@ -14,7 +14,7 @@ export default function Meta() {
       <meta name="twitter:site" content="@emurrelldev" />
       <meta
         name="twitter:image"
-        content="https://i.postimg.cc/kgYHFXBk/twitter-meta.jpg"
+        content="https://i.postimg.cc/brwM5XpL/twitter-preview.jpg"
       />
       <meta name="twitter:title" content="Eric Murrell - Web Developer" />
 
