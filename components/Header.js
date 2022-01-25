@@ -66,7 +66,7 @@ export default function Header() {
         </motion.h3>
         <DelayedFadeIn>
           <Link href={"/#Contact"} passHref>
-            <button className="p-2 mt-5 text-lg font-normal text-black border-2 shadow-lg cursor-pointer hover:bg-transparent w-36 lg:p-3 hover:text-highlight lg:mt-8 lg:w-60 lg:text-2xl border-highlight bg-highlight">
+            <button className="p-2 mt-5 text-lg font-normal bg-transparent border-2 shadow-lg cursor-pointer hover:text-black w-36 lg:p-3 text-highlight lg:mt-8 lg:w-60 lg:text-2xl border-highlight hover:bg-highlight">
               Contact Me
             </button>
           </Link>

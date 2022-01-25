@@ -34,7 +34,7 @@ export default function Bio() {
 
         <div className="flex flex-col justify-center py-4 lg:flex-row ">
           <FadeIn>
-            <div className="flex flex-col items-center pb-12 text-center lg:pb-0 lg:px-12">
+            <div className="flex flex-col items-center pb-12 text-center lg:pb-0 lg:px-12 ">
               <span className="pb-2 text-2xl font-medium md:text-3xl">
                 Responsive
               </span>
@@ -46,7 +46,7 @@ export default function Bio() {
                 className=" opacity-80"
                 layout="fixed"
               />
-              <p className="pt-4 text-base md:text-lg lg:text-xl">
+              <p className="pt-4 pb-4 text-base md:text-lg lg:text-xl">
                 Pixel-perfect layout on all devices. Mobile-first design
                 approach.
               </p>
@@ -54,7 +54,7 @@ export default function Bio() {
           </FadeIn>
 
           <FadeIn>
-            <div className="flex flex-col items-center px-4 pb-12 text-center lg:pb-0 lg:px-12">
+            <div className="flex flex-col items-center px-4 pb-12 text-center lg:pb-0 lg:px-12 ">
               <span className="pb-2 text-2xl font-medium md:text-3xl">
                 Fast
               </span>
@@ -66,7 +66,7 @@ export default function Bio() {
                 className=" opacity-80"
                 layout="fixed"
               />
-              <p className="w-full pt-4 pb-8 text-base md:text-lg lg:text-xl">
+              <p className="w-full pt-4 pb-4 text-base md:text-lg lg:text-xl">
                 Ultra-fast load times are an essential aspect of every project.
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function Bio() {
                 height={120}
                 layout="fixed"
               />
-              <p className="w-full pt-4 pb-8 text-base md:text-lg lg:text-xl">
+              <p className="w-full pt-4 pb-4 text-base md:text-lg lg:text-xl">
                 I deliver a clean, modern UI and smooth, seamless UX.
               </p>
             </div>
