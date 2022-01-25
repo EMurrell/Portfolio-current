@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <footer
       id="Contact"
-      className="flex flex-col justify-around px-12 pt-10 xl:h-auto md:px-24 lg:px-52 text-neutral-100 bg-neutral-800 font-display"
+      className="flex flex-col justify-around px-12 pt-10 bg-black xl:h-auto md:px-24 lg:px-52 text-neutral-100 font-display"
     >
       <div className="flex flex-col py-20 2xl:py-20 lg:flex-row ">
         <FadeUp>
@@ -66,13 +66,7 @@ export default function Contact() {
           <Tailwindcss className="w-6 h-6 mx-2" />
           <Framer className="w-6 h-6 mx-2" />
         </div>
-        <div className="flex flex-row justify-center pb-1">
-          SVG Background by&nbsp;
-          <a href="https://bgjar.com">
-            <u>BGJar.com</u>
-          </a>
-        </div>
-        &copy; {getCurrentYear()}
+        &copy; {getCurrentYear()} emurrell.com
       </div>
     </footer>
   );

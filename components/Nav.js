@@ -5,6 +5,7 @@ import { Github, Devdotto, Twitter } from "@icons-pack/react-simple-icons";
 import { MailIcon } from "@heroicons/react/outline";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState, useEffect } from "react";
+import DelayedFadeIn from "../animations/DelayedFadeIn";
 
 const links = [
   { name: "About", to: "#About", id: 1 },
@@ -39,7 +40,7 @@ export default function Nav() {
   const [animateNav, setAnimateNav] = useState(false);
   useEffect(() => {
     const listener = () => {
-      if (window.scrollY > 140) {
+      if (window.scrollY > 100) {
         setAnimateNav(true);
       } else setAnimateNav(false);
     };
@@ -52,18 +53,18 @@ export default function Nav() {
 
   return (
     <nav
-      className={`text-neutral-100 w-full flex backdrop-blur-sm justify-between  font-display  fixed z-10 trasition ease-in-out duration-500 ${
-        animateNav && "shadow-xl "
+      className={`text-neutral-100 w-full flex  justify-between  font-display  fixed z-10 trasition ease-in-out duration-500 ${
+        animateNav && "shadow-lg "
       }`}
     >
       <div
-        className={`flex w-screen py-4 bg-transparent   ${
+        className={`flex w-screen py-10 bg-transparent   ${
           animateNav &&
-          "py-0  backdrop-blur-lg bg-neutral-800/30 trasition ease-in-out duration-500"
+          "py-1  backdrop-blur-sm bg-black/30 trasition ease-in-out duration-700"
         } mx-auto   justify-between `}
       >
         <Link href="/">
-          <a className="inline-flex mx-4 my-5 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer font-logo md:text-3xl md:ml-8 lg:ml-16 hover:shadow-bottom ">
+          <a className="mx-4 mt-5 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer h-max font-logo md:ml-8 lg:ml-16 hover:shadow-bottom">
             Eric Murrell
           </a>
         </Link>
@@ -128,9 +129,9 @@ export default function Nav() {
 
         {/* The Hamburger Menu and Close Icons */}
         <div className="flex justify-end md:hidden ">
-          <button className="px-2 m-2 cursor-pointer">
+          <button className="px-2 m-2 cursor-pointer ">
             <span className="sr-only ">Open main menu</span>
-            <Hamburger toggled={open} toggle={cycleOpen} />
+            <Hamburger toggled={open} toggle={cycleOpen} className="" />
           </button>
         </div>
 

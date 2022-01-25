@@ -25,7 +25,7 @@ export default function Skills() {
   return (
     <section
       id="Skills"
-      className="min-h-screen px-12 py-20 md:px-16 lg:px-32 2xl:px-64 text-neutral-100 bg-neutral-800 font-display"
+      className="min-h-screen px-12 py-20 bg-black md:px-16 lg:px-32 2xl:px-64 text-neutral-100 font-display"
     >
       <div className="flex flex-col w-full text-center">
         <div className="flex w-full lg:justify-center">

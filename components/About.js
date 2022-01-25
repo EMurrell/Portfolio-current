@@ -54,7 +54,7 @@ export default function Bio() {
           </FadeIn>
 
           <FadeIn>
-            <div className="flex flex-col items-center px-4 pb-12 text-center lg:pb-0 lg:px-12 ">
+            <div className="flex flex-col items-center px-4 pb-12 text-center lg:pb-0 lg:px-12">
               <span className="pb-2 text-2xl font-medium md:text-3xl">
                 Fast
               </span>
