@@ -58,13 +58,13 @@ export default function Nav() {
       }`}
     >
       <div
-        className={`flex w-screen py-10 bg-transparent   ${
+        className={`flex w-screen py-6 bg-transparent   ${
           animateNav &&
-          "py-1  backdrop-blur-sm bg-black/30 trasition ease-in-out duration-700"
+          "py-0  backdrop-blur-sm bg-neutral-900/30 trasition ease-in-out duration-700"
         } mx-auto   justify-between `}
       >
         <Link href="/">
-          <a className="mx-4 mt-5 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer h-max font-logo md:ml-8 lg:ml-16 hover:shadow-bottom">
+          <a className="mx-6 mt-5 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer h-max font-logo md:ml-8 lg:ml-16 hover:shadow-bottom">
             Eric Murrell
           </a>
         </Link>
@@ -73,7 +73,7 @@ export default function Nav() {
         <AnimatePresence>
           {open && (
             <motion.aside
-              className="fixed top-0 right-0 h-screen bg-neutral-700 md:hidden overflow"
+              className="fixed top-0 right-0 h-screen bg-neutral-800 md:hidden overflow"
               initial={{ width: 0 }}
               transition={{ type: "tween" }}
               animate={{

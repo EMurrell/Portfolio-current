@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { Github, Devdotto, Twitter } from "@icons-pack/react-simple-icons";
 import { MailIcon, ArrowNarrowRightIcon } from "@heroicons/react/outline";
-import FadeIn from "../animations/FadeIn";
+import FadeRight from "../animations/FadeRight";
 import FadeUp from "../animations/FadeUp";
+import Arrow from "../components/Arrow";
 import { Framer, Nextdotjs, Tailwindcss } from "@icons-pack/react-simple-icons";
 
 export default function Contact() {
@@ -12,17 +13,19 @@ export default function Contact() {
   return (
     <footer
       id="Contact"
-      className="flex flex-col justify-around px-12 pt-10 bg-black xl:h-auto md:px-24 lg:px-52 text-neutral-100 font-display"
+      className="flex flex-col justify-around px-12 pt-10 bg-neutral-900 xl:h-auto md:px-24 lg:px-52 2xl:px-64 text-neutral-100 font-display"
     >
-      <div className="flex flex-col py-20 2xl:py-20 lg:flex-row ">
+      <hr className="mb-4 opacity-50 " />
+      <div className="flex flex-col py-20 2xl:py-20 lg:flex-row lg:justify-around">
         <FadeUp>
-          <h1 className="pr-6 mb-12 text-4xl font-medium md:text-5xl lg:text-6xl lg:w-1/2">
+          <h1 className="pr-6 mb-12 text-5xl font-medium md:text-6xl lg:text-7xl lg:w-1/2">
             Let&apos;s Work <br />
             Together.
           </h1>
         </FadeUp>
-        <FadeIn>
-          <div className="flex flex-col text-base text-left 2xl:flex-row lg:text-lg">
+
+        <div className="flex flex-col text-lg text-left lg:text-xl">
+          <FadeRight>
             <a href="mailto:emurrell.dev@gmail.com">
               <div className="flex flex-col mb-6 transition duration-300 ease-in-out transform cursor-pointer lg:mx-6 h-max w-max hover:shadow-bottom">
                 <h2 className="flex flex-row w-max">
@@ -34,6 +37,8 @@ export default function Contact() {
                 </p>
               </div>
             </a>
+          </FadeRight>
+          <FadeRight>
             <a href="https://github.com/EMurrell">
               <div className="flex flex-col mb-6 transition duration-300 ease-in-out transform cursor-pointer lg:mx-6 h-max w-max hover:shadow-bottom">
                 <h2 className="flex flex-row w-max">
@@ -45,6 +50,8 @@ export default function Contact() {
                 </p>
               </div>
             </a>
+          </FadeRight>
+          <FadeRight>
             <a href="https://twitter.com/emurrelldev">
               <div className="flex flex-col mb-6 transition duration-300 ease-in-out transform cursor-pointer lg:mx-6 h-max w-max hover:shadow-bottom">
                 <h2 className="flex flex-row w-max">
@@ -56,8 +63,8 @@ export default function Contact() {
                 </p>
               </div>
             </a>
-          </div>
-        </FadeIn>
+          </FadeRight>
+        </div>
       </div>
       <div className="flex flex-col justify-center py-12 text-base text-center border-t border-neutral-500 lg:text-lg text-neutral-500">
         <div className="flex flex-row justify-center pb-1">

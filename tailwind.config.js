@@ -14,7 +14,7 @@ module.exports = {
         bottom4: "inset 0px -11px 0px   #525252",
       },
       backgroundImage: {
-        hero: "url('/phoenix-ribbon(2).svg')",
+        hero: "url('/wave2.svg')",
       },
       colors: {
         highlight: "#ef4444",

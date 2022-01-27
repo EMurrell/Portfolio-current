@@ -1,6 +1,7 @@
 import FadeIn from "../animations/FadeIn";
 import FadeUp from "../animations/FadeUp";
-import FadeLeft from "../animations/FadeLeft";
+import FadeRight from "../animations/FadeRight";
+import Arrow from "../components/Arrow";
 import { AnimatePresence, animatePresence, motion } from "framer-motion";
 import {
   ReactJs,
@@ -25,19 +26,20 @@ export default function Skills() {
   return (
     <section
       id="Skills"
-      className="min-h-screen px-12 py-20 bg-black md:px-16 lg:px-32 2xl:px-64 text-neutral-100 font-display"
+      className="px-12 pb-24 bg-neutral-900 md:px-16 lg:px-32 2xl:px-64 text-neutral-100 font-display"
     >
+      <hr className="opacity-50 mb-28 " />
       <div className="flex flex-col w-full text-center">
-        <div className="flex w-full lg:justify-center">
-          <FadeLeft>
-            <h1 className="flex text-4xl font-medium text-center w-max md:text-5xl lg:text-6xl shadow-bottom md:shadow-bottom2 lg:shadow-bottom3">
-              Skills
+        <div className="flex justify-center w-full">
+          <FadeUp>
+            <h1 className="flex text-5xl font-medium text-center w-max md:text-6xl lg:text-7xl ">
+              Tech Stack
             </h1>
-          </FadeLeft>
+          </FadeUp>
         </div>
 
         <FadeIn>
-          <div className="flex flex-row justify-center pt-16 font-body">
+          <div className="flex flex-row justify-center pt-12 font-body">
             <div className="flex flex-col ">
               <Html5 className="icon" />
               <p className="description">HTML</p>

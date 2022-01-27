@@ -1,6 +1,6 @@
-import FadeIn from "../animations/FadeIn";
-import FadeUp from "../animations/FadeUp";
 import FadeRight from "../animations/FadeRight";
+import FadeUp from "../animations/FadeUp";
+import FadeIn from "../animations/FadeIn";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -9,71 +9,63 @@ export default function Bio() {
   return (
     <section
       id="About"
-      className="flex flex-col px-12 py-16 md:py-36 md:px-24 lg:px-60 2xl:px-80 text-neutral-800 font-display "
+      className="flex flex-col px-8 py-2 bg-neutral-900 md:py-28 md:px-32 2xl:px-64 text-neutral-100 font-display "
     >
-      <FadeRight>
-        <div className="flex lg:justify-center">
-          <span className="text-4xl font-medium w-max md:text-5xl shadow-bottom md:shadow-bottom2 lg:shadow-bottom3">
-            About
-          </span>
-        </div>
-      </FadeRight>
-
-      <div className="pt-8 text-xl font-normal lg:text-center md:text-2xl ">
-        <FadeIn>
-          <p className="py-4">
+      <div className="pt-8 text-3xl xl:text-center md:text-4xl xl:text-5xl">
+        <FadeUp>
+          <p className="py-4 font-light">
             I am a Full Stack Web Developer, with a focus on Jamstack
             technology.
           </p>
-        </FadeIn>
-        <FadeIn>
-          <p className="pb-10 md:pb-20">
+        </FadeUp>
+        <FadeUp>
+          <p className="pt-10 pb-24 font-light md:pb-32">
             I have a passion for creating engaging digital products.
           </p>
-        </FadeIn>
+        </FadeUp>
 
-        <div className="flex flex-col justify-center py-4 lg:flex-row ">
-          <FadeIn>
-            <div className="flex flex-col items-center pb-12 text-center lg:pb-0 lg:px-12 ">
-              <span className="pb-2 text-2xl font-medium md:text-3xl">
+        <div className="flex flex-col justify-center py-4 xl:flex-row ">
+          <FadeRight>
+            <div className="flex flex-col items-center pb-20 text-center xl:pb-0 xl:mx-16">
+              <span className="mb-3 text-3xl md:text-4xl xl:text-5xl ">
                 Responsive
               </span>
               <Image
-                src="/resp-dev.png"
+                src="/resp-dev-gray.png"
                 alt="picture of multiple devices"
                 width={200}
                 height={120}
-                className=" opacity-80"
+                className=""
                 layout="fixed"
               />
-              <p className="pt-4 pb-4 text-base md:text-lg lg:text-xl">
+              <p className="pt-2 pb-4 text-xl font-light md:text-xl xl:text-2xl">
                 Pixel-perfect layout on all devices. Mobile-first design
                 approach.
               </p>
             </div>
-          </FadeIn>
+          </FadeRight>
 
-          <FadeIn>
-            <div className="flex flex-col items-center px-4 pb-12 text-center lg:pb-0 lg:px-12 ">
-              <span className="pb-2 text-2xl font-medium md:text-3xl">
+          <FadeRight>
+            <div className="flex flex-col items-center pb-20 mx-4 text-center xl:pb-0 xl:mx-16 ">
+              <span className="mb-3 text-3xl cursor-pointer md:text-4xl xl:text-5xl ">
                 Fast
               </span>
               <Image
-                src="/speedometer.png"
+                src="/speedometerlighter.png"
                 alt="picture of speedometer"
                 width={200}
                 height={120}
-                className=" opacity-80"
+                className=""
                 layout="fixed"
               />
-              <p className="w-full pt-4 pb-4 text-base md:text-lg lg:text-xl">
-                Ultra-fast load times are an essential aspect of every project.
+              <p className="pt-2 pb-4 text-xl font-light md:text-xl xl:text-2xl ">
+                Ultra-fast load times are a top priority.
               </p>
             </div>
-          </FadeIn>
-          <FadeIn>
-            <div className="flex flex-col items-center px-4 pb-12 text-center lg:pb-0 lg:px-12 ">
-              <span className="pb-2 text-2xl font-medium md:text-3xl">
+          </FadeRight>
+          <FadeRight>
+            <div className="flex flex-col items-center pb-20 mx-4 text-center xl:pb-0 xl:mx-16 ">
+              <span className="mb-3 text-3xl md:text-4xl xl:text-5xl ">
                 Intuitive
               </span>
               <Image
@@ -82,12 +74,13 @@ export default function Bio() {
                 width={180}
                 height={120}
                 layout="fixed"
+                className="opacity-60"
               />
-              <p className="w-full pt-4 pb-4 text-base md:text-lg lg:text-xl">
-                I deliver a clean, modern UI and smooth, seamless UX.
+              <p className="pt-2 pb-4 text-xl font-light md:text-xl xl:text-2xl ">
+                I deliver a clean, modern UI and excellent UX.
               </p>
             </div>
-          </FadeIn>
+          </FadeRight>
         </div>
       </div>
     </section>
