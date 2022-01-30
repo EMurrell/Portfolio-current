@@ -1,5 +1,5 @@
-import FadeRight from "../animations/FadeRight";
 import FadeUp from "../animations/FadeUp";
+import FadeRight from "../animations/FadeRight";
 import FadeIn from "../animations/FadeIn";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -24,17 +24,17 @@ export default function Bio() {
           </p>
         </FadeUp>
 
-        <div className="flex flex-col justify-center py-4 xl:flex-row ">
-          <FadeRight>
-            <div className="flex flex-col items-center pb-20 text-center xl:pb-0 xl:mx-16">
+        <div className="flex flex-col justify-center py-4 lg:flex-row ">
+          <FadeUp>
+            <div className="flex flex-col items-center pb-20 text-center xl:pb-0 xl:mx-12 mx-8">
               <span className="mb-3 text-3xl md:text-4xl xl:text-5xl ">
                 Responsive
               </span>
               <Image
                 src="/resp-dev-gray.png"
                 alt="picture of multiple devices"
-                width={200}
-                height={120}
+                width={170}
+                height={100}
                 className=""
                 layout="fixed"
               />
@@ -43,18 +43,18 @@ export default function Bio() {
                 approach.
               </p>
             </div>
-          </FadeRight>
+          </FadeUp>
 
-          <FadeRight>
-            <div className="flex flex-col items-center pb-20 mx-4 text-center xl:pb-0 xl:mx-16 ">
-              <span className="mb-3 text-3xl cursor-pointer md:text-4xl xl:text-5xl ">
+          <FadeUp>
+            <div className="flex flex-col items-center pb-20  text-center xl:pb-0 xl:mx-12 mx-8">
+              <span className="mb-3 text-3xl  md:text-4xl xl:text-5xl ">
                 Fast
               </span>
               <Image
                 src="/speedometerlighter.png"
                 alt="picture of speedometer"
-                width={200}
-                height={120}
+                width={150}
+                height={100}
                 className=""
                 layout="fixed"
               />
@@ -62,17 +62,17 @@ export default function Bio() {
                 Ultra-fast load times are a top priority.
               </p>
             </div>
-          </FadeRight>
-          <FadeRight>
-            <div className="flex flex-col items-center pb-20 mx-4 text-center xl:pb-0 xl:mx-16 ">
+          </FadeUp>
+          <FadeUp>
+            <div className="flex flex-col items-center pb-20 mx-8 text-center xl:pb-0 xl:mx-12 ">
               <span className="mb-3 text-3xl md:text-4xl xl:text-5xl ">
                 Intuitive
               </span>
               <Image
                 src="/lightbulb.png"
                 alt="picture of lightbuld"
-                width={180}
-                height={120}
+                width={155}
+                height={100}
                 layout="fixed"
                 className="opacity-60"
               />
@@ -80,7 +80,7 @@ export default function Bio() {
                 I deliver a clean, modern UI and excellent UX.
               </p>
             </div>
-          </FadeRight>
+          </FadeUp>
         </div>
       </div>
     </section>

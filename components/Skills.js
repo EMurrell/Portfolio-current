@@ -31,11 +31,11 @@ export default function Skills() {
       <hr className="opacity-50 mb-28 " />
       <div className="flex flex-col w-full text-center">
         <div className="flex justify-center w-full">
-          <FadeUp>
+          <FadeRight>
             <h1 className="flex text-5xl font-medium text-center w-max md:text-6xl lg:text-7xl ">
               Tech Stack
             </h1>
-          </FadeUp>
+          </FadeRight>
         </div>
 
         <FadeIn>

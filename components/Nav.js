@@ -53,7 +53,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`text-neutral-100 w-full flex  justify-between  font-display  fixed z-10 trasition ease-in-out duration-500 ${
+      className={`text-neutral-100 w-full flex  justify-between  font-display  fixed z-10 transition ease-in-out duration-500 ${
         animateNav && "shadow-lg "
       }`}
     >

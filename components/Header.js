@@ -38,7 +38,8 @@ export default function Header() {
             },
           }}
         >
-          Hello, I&apos;m Eric.
+          Hello,
+          <br className="md:hidden" /> I&apos;m Eric.
         </motion.h1>
 
         <motion.h3
@@ -62,7 +63,7 @@ export default function Header() {
             },
           }}
         >
-          I build fast websites.
+          I build fast <br className="md:hidden" /> websites.
         </motion.h3>
         <DelayedFadeIn>
           <Link href={"/#Contact"} passHref>
