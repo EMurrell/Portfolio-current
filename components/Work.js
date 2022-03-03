@@ -9,7 +9,7 @@ export default function Work() {
   return (
     <section
       id="Work"
-      className="flex flex-col items-center w-full px-12 md:px-16 lg:px-32 2xl:px-64 bg-neutral-900 text-neutral-100 font-display"
+      className="flex flex-col items-center w-full px-12 pb-6 md:px-16 lg:px-32 2xl:px-64 bg-neutral-900 text-neutral-100 font-display"
     >
       <hr className="w-full mb-24 opacity-50" />
       <FadeRight>

@@ -38,8 +38,8 @@ export default function Port() {
                   Brief:
                   <br /> I saught to create a portfolio site that would
                   challenge my skill levels for both design and development. My
-                  approach was to incorporate elements of minimalism and
-                  futurism, with bold typography, and orchestrated animations.
+                  approach was to incorporate elements of minimalism, bold
+                  typography, and orchestrated animations.
                 </p>
                 <p>
                   Tools:
@@ -48,7 +48,7 @@ export default function Port() {
                 </p>
               </div>
             </div>
-            <Link href="/#Work">
+            <Link href="/#Work" passHref>
               <p className="mt-12 text-center cursor-pointer md:w-40 md:text-left 2xl:text-xl hover:text-highlight">
                 &larr;Go Back
               </p>

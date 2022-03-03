@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 import Meta from "../components/Meta";
 import FadeIn from "../animations/FadeIn";
 
@@ -24,7 +25,7 @@ export default function Mtc() {
               </h3>
             </div>
             <div className="inline-flex justify-center py-4 md:justify-end ">
-              <button className="p-2 mt-6 text-lg font-normal text-white border-2 shadow-lg cursor-pointer w-44 md:w-72 lg:p-3 hover:bg-neutral-800 hover:text-highlight lg:mt-8 lg:w-64 lg:text-2xl border-highlight shadow-neutral-900 bg-highlight">
+              <button className="p-2 mt-6 text-lg font-normal text-white border-2 shadow-lg cursor-pointer lg:mr-8 w-44 md:w-72 lg:p-3 hover:bg-neutral-800 hover:text-highlight lg:mt-8 lg:w-64 lg:text-2xl border-highlight shadow-neutral-900 bg-highlight">
                 <a
                   className="text-base md:text-lg lg:text-xl "
                   href="https://masonstouch.com"
@@ -39,27 +40,28 @@ export default function Mtc() {
                   Brief:
                   <br /> Redesign/develop a modern website to replace an
                   outdated and unresponsive site.
+                  <br />
+                  Create written copy, optimize photos and images for the web.
                 </p>
                 <p>
                   Tools:
                   <br />
-                  Next.js (React), Tailwind CSS / UI, Framer-Motion, HeadlessUI,
-                  Affinity Photo.
+                  Next.js (React), Tailwind CSS / UI, Framer-Motion, Affinity
+                  Photo.
                 </p>
               </div>
-              <div className="flex justify-center rounded lg:justify-end lg:w-1/2 ">
+              <div className="flex justify-center p-8 rounded lg:justify-end lg:w-1/2">
                 <a href="https://masonstouch.com">
-                  <img
-                    src="/mtcsquare.jpg"
+                  <Image
+                    src="/mtc-screenshot.jpg"
                     alt="picture of website"
-                    width="300"
-                    height="auto"
-                    className="px-6 py-20 transition duration-300 ease-in-out transform md:p-0 hover:scale-105"
+                    width={375}
+                    height={906}
                   />
                 </a>
               </div>
             </div>
-            <Link href="/#Work">
+            <Link href="/#Work" passHref>
               <p className="text-center cursor-pointer md:w-40 md:text-left 2xl:text-xl hover:text-highlight">
                 &larr;Go Back
               </p>

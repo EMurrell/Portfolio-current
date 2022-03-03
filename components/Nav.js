@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { Github, Devdotto, Twitter } from "@icons-pack/react-simple-icons";
 import { MailIcon } from "@heroicons/react/outline";
-import { Sling as Hamburger } from "hamburger-react";
+import Hamburger from "hamburger-react";
 import { useState, useEffect } from "react";
 import DelayedFadeIn from "../animations/DelayedFadeIn";
 
