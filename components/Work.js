@@ -20,7 +20,7 @@ export default function Work() {
       <div className="pt-4">
         <FadeRight>
           <Link href={"/mtc"} passHref>
-            <div className="flex flex-col px-2 py-8 transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight ">
+            <div className="flex flex-col py-8 transition duration-300 ease-in-out transform cursor-pointer hover:scale-105 hover:text-highlight ">
               <h3 className="text-2xl md:text-3xl lg:text-4xl ">
                 Mason&apos;s Touch Construction
               </h3>

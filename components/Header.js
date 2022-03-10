@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <section
       id="Home"
-      className="flex flex-col w-full h-screen px-6 pt-16 bg-center bg-cover bg-hero bg-neutral-900 text-neutral-100 font-display md:px-10 lg:px-20 xl:px-28 "
+      className="flex flex-col w-full h-screen px-6 pt-8 bg-center bg-cover bg-hero bg-neutral-900 text-neutral-100 font-display md:px-10 lg:px-20 xl:px-28 "
     >
       <main className="flex flex-col justify-center w-full h-screen font-medium tracking-tight lg:text-center pb-28 md:tracking-normal md:pb-16">
         <motion.h1
@@ -63,7 +63,7 @@ export default function Header() {
             },
           }}
         >
-          I build for the web.
+          I&apos;m a web developer.
         </motion.h3>
         <DelayedFadeIn>
           <Link href={"/#Contact"} passHref>
